@@ -1,3 +1,6 @@
+# THIS REPO IS A WIP THAT WILL CONTAIN DEMO CODE FOR THE WAGTAIL STARTER KIT
+
+
 # Wagtail Starter Kit - Django Project Template
 
 This Django project template is designed for creating Wagtail builds quickly, intended for developers to bootstrap their Wagtail site development using `wagtail start --template=`. The template comes with pre-defined pages, blocks, functionalities, and fixtures to streamline the initial setup process.
