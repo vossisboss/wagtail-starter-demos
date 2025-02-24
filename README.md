@@ -1,3 +1,5 @@
+# THIS REPO IS A WIP FOR DEMO CODE FOR THE WAGTAIL STARTER KIT
+
 # Wagtail News Template
 
 This project template is designed for creating [Wagtail](https://wagtail.org) builds quickly, intended for developers to bootstrap their Wagtail site development using `wagtail start --template=`. The template comes with pre-defined pages, blocks, functionalities, and fixtures to streamline the initial setup process.
