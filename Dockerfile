@@ -21,7 +21,7 @@ WORKDIR /app
 #    read/used by Gunicorn.
 ENV PATH=$VIRTUAL_ENV/bin:$PATH \
     PYTHONUNBUFFERED=1 \
-    DJANGO_SETTINGS_MODULE={{ project_name }}.settings.production \
+    DJANGO_SETTINGS_MODULE=myproject.settings.production \
     PORT=8000
 
 # Port exposed by this container. Should default to the port used by your WSGI
@@ -57,4 +57,4 @@ RUN SECRET_KEY=none python manage.py collectstatic --noinput --clear
 #   PRACTICE. The database should be migrated manually or using the release
 #   phase facilities of your hosting platform. This is used only so the
 #   Wagtail instance can be started with a simple "docker run" command.
-CMD set -xe; python manage.py createcachetable; python manage.py migrate --noinput; gunicorn {{ project_name }}.wsgi:application
+CMD set -xe; python manage.py createcachetable; python manage.py migrate --noinput; gunicorn myproject.wsgi:application
